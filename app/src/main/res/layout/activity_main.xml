@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toTopOf="@+id/recipeList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/inputCate"
+            android:layout_width="270sp"
+            android:layout_height="51dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="5"
+            android:autofillHints="Enter food category..."
+            android:fontFamily="cursive"
+            android:hint="@string/enter_food_category"
+            android:inputType="text"
+            android:padding="8sp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:background="@drawable/edit_text_design"/>
+
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="59dp"
+            android:layout_height="51dp"
+            android:contentDescription="@string/searchbtn"
+            android:layout_marginStart="2sp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="2"
+            android:background="@drawable/edit_text_design"
+            android:src="@drawable/search" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

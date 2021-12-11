@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Just Recipe</string>
+    <string name="greeting">Welcome to Just Recipe!</string>
+    <string name="introduction">Just Recipe provides many good recipes. You can search your desired recipes by a specific category such as Chicken, Seafood, Dessert, etc.</string>
+    <string name="starting_btn">Start</string>
+    <string name="pasta">pasta</string>
+    <string name="yummy">Yummy</string>
+    <string name="more_food">More food</string>
+    <string name="more_joy">More joy</string>
+    <string name="heartbtn">heartBtn</string>
+    <string name="search_for_recipe">Search for recipe</string>
+    <string name="searchbtn">searchBtn</string>
+    <string name="enter_food_category">Enter food category…</string>
+    <string name="get_your_saved_recipe">Get your saved recipe</string>
+    <string name="reset_your_recipe_list">Reset your recipe list</string>
+    <string name="foodimage">foodImage</string>
+    <string name="instructions">Instructions:</string>
+    <string name="ingredients">Ingredients:</string>
+    <string name="watch_youtube_video">Watch Youtube video:</string>
+    <string name="downloadbtn">downloadBtn</string>
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandingPage">
+
+        <ImageView
+            android:id="@+id/mainPage"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="@android:string/autofill"
+            android:src="@drawable/main_pic"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="3sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainPage">
+
+            <TextView
+                android:id="@+id/introText"
+                android:fontFamily="cursive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/greeting"
+                android:textColor="@color/red_brown"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/introduction"
+                android:padding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:textColor="@color/red_brown"
+                android:text="@string/introduction"
+                android:textAlignment="center"
+                android:textSize="22sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="10sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/pasta"
+                    android:src="@drawable/pasta"/>
+
+                <ImageView
+                    android:layout_width="10sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/more_food"
+                    android:src="@drawable/chef"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:layout_width="10sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/more_joy"
+                    android:src="@drawable/delicious"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="10sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="cursive"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/red_brown"
+                    android:paddingStart="12sp"
+                    android:paddingEnd="0sp"
+                    android:text="@string/yummy"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="10sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="cursive"
+                    android:textColor="@color/red_brown"
+                    android:paddingStart="12sp"
+                    android:paddingEnd="0sp"
+                    android:textSize="20sp"
+                    android:text="@string/more_food"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="10sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red_brown"
+                    android:layout_weight="1"
+                    android:paddingStart="12sp"
+                    android:paddingEnd="0sp"
+                    android:fontFamily="cursive"
+                    android:textSize="20sp"
+                    android:text="@string/more_joy"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:background="@color/red_brown"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.52" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/starting_btn"
+            android:textColor="@color/red_brown"
+            android:backgroundTint="@color/pink"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
